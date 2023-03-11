@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1" content="width=device-width, initial-scale=1">
+    <title>User Details</title>
+    <style>
+      .head {
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .content {
+        max-width: 500px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body style="background-color:grey;">
+    <div class="content">
+      <div class="head">
+        <h3>Fill in the Form</h3>
+      </div>
+      <form action="FormData" method="post">
+        <table>
+          <tr>
+            <td>Full Name:</td>
+            <td>
+              <input type="text" name="name" style="background-color:yellow;" />
+            </td>
+          </tr>
+          <tr>
+            <td>Phone Number:</td>
+            <td>
+              <input type="text" name="phone" style="background-color:yellow;" />
+            </td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td>
+              <input type="radio" name="gender" value="male" />Male <input type="radio" name="gender" value="female" />Female  <input type="radio" name="gender" value="female" />Prefer Not to Say
+            </td>
+          </tr>
+          <tr>
+            <td>Select Programming Languages to learn:</td>
+            <td>
+              <input type="checkbox" name="language" value="java" />Java <input type="checkbox" name="language" value="python" />Python  <input type="checkbox" name="language" value="sql" />SQL<input type="checkbox" name="language" value="php" />PHP<input type="checkbox" name="language" value="c++" />C++
+            </td>
+          </tr>
+          <tr>
+            <td>Select Course duration:</td>
+            <td>
+              <select name="duration">
+                <option value="3months">3 Months</option>
+                <option value="6months">6 Months</option>
+                <option value="9months">9 Months</option>
+                <option value="12months">12 Months</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Comments (If any):</td>
+            <td>
+              <textarea rows="6" cols="40" name="comment"></textarea>
+            </td>
+          </tr>
+        </table>
+        <input type="submit" value="Submit Details">
+      </form>
+    </div>
+  </body>
+</html>
